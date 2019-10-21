@@ -20,8 +20,6 @@
 // Mail: florin@jetbrains.com
 // Gophers Slack: @DLSNIPER (https://invite.slack.golangbridge.org) #goland
 
-
-
 package main
 
 import (
@@ -93,6 +91,10 @@ func main() {
 
 func initializeWakeWordListener() *wakeword.Listener {
 	wd, _ := os.Getwd()
+	// export PHAS_OS=mac
+	// export PHAS_OS=linux
+	// export PHAS_OS=windows
+
 	runningOS := strings.ToLower(os.Getenv("PHAS_OS"))
 	modelPath := wd + "/lib/common/porcupine_params.pv"
 	libDir :=  fmt.Sprintf("%s/lib/resources/%s", wd, runningOS)

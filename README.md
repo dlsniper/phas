@@ -119,8 +119,8 @@ Building PHAS on Windows needs to be performed like this:
 
 - set the following environment variables:
 ```shell script
-export CGO_CFLAGS=-I<path to PHAS root directory>\lib
-export CGO_LDFLAGS=-L<path to PHAS root directory>\lib\windows
+export CGO_CFLAGS=-I/Users/florin/phas/lib
+export CGO_LDFLAGS=-L/Users/florin/phas/lib/macos
 ```
 Also, include `C:\msys64\mingw64\bin` in your PATH on Windows.
 
@@ -139,7 +139,9 @@ brew install portaudio pkg-config
 During the compilation step, you also need to set the following environment variable:
 
 ```shell script
-export DYLD_LIBRARY_PATH="${DYLD_LIBRARY_PATH}:<path to PHAS root directory>/lib/macos"
+export CGO_CFLAGS=-I/Users/florin/phas/lib
+export CGO_LDFLAGS=-L/Users/florin/phas/lib/macos
+export DYLD_LIBRARY_PATH="${DYLD_LIBRARY_PATH}:/Users/florin/phas/lib/macos/"
 ```
 
 ## Getting GCP credentials for the voice APIs

@@ -31,6 +31,8 @@ type Intent struct {
 	Actions      []Action
 }
 
+// Weather in [city]
+
 //Matches checks if an Intent matches a given command
 func (i *Intent) Matches(_ context.Context, command string) bool {
 	// TODO Add placeholder support and return the found pairings as well

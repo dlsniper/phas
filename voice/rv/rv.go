@@ -17,6 +17,7 @@ package rv
 import (
 	"bytes"
 	"encoding/binary"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -120,8 +121,8 @@ func (s *Service) recordVoice() string {
 	// prevent Go from capturing the value of nSamples at the beginning of the function, rendering the call useless
 	defer func() { s.closeFile(tempFile, nSamples) }()
 
-	in := make([]int32, 64)
-	stream, err := portaudio.OpenDefaultStream(1, 0, 16000, len(in), in)
+	in := make([]int16, 1024)
+	stream, err := portaudio.OpenDefaultStream(1, 0, 42000, len(in), in)
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -230,7 +231,7 @@ func (s *Service) Listen() []byte {
 	fileName := s.recordVoice()
 
 	defer s.removeFile(fileName)
-
+	fmt.Printf("voice command file is: %s\n", fileName)
 	return s.processVoice(fileName)
 }
 

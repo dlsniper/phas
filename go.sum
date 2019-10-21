@@ -23,6 +23,8 @@ github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym
 github.com/charithe/porcupine-go v0.0.3-0.20181111155048-19a2de49b713 h1:JJYLBvq5jTyWdtHVLear4GoUNwEzzJjYcdGZy6nMxT4=
 github.com/charithe/porcupine-go v0.0.3-0.20181111155048-19a2de49b713/go.mod h1:BrQj0OJhXvCQNNx7dVG0USx5OTuBYNbsPUK1RiaS5BI=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
+github.com/gen2brain/malgo v0.0.0-20191007143048-89d560b7cba5 h1:eSa1fjtTTNE81pdYRSWHCapzobcEFKBHBi5f7K7XWDg=
+github.com/gen2brain/malgo v0.0.0-20191007143048-89d560b7cba5/go.mod h1:zHSUNZAXfCeNsZou0RtQ6Zk7gDYLIcKOrUWtAdksnEs=
 github.com/go-audio/aiff v0.0.0-20180403003018-6c3a8a6aff12/go.mod h1:AMSAp6W1zd0koOdX6QDgGIuBDTUvLa2SLQtm7d9eM3c=
 github.com/go-audio/aiff v1.0.0 h1:Mn4zZvfGjTUc9VWXiTlj6BYUADTsmh3qZtpCyHFRMiE=
 github.com/go-audio/aiff v1.0.0/go.mod h1:Kazp+9JR/Y1ITCXaDlO6OIIOrz6eGGAn+dGT04V4HPM=
