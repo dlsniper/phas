@@ -8,6 +8,8 @@
       <w>dlsniper</w>
       <w>genproto</w>
       <w>gordonklaus</w>
+      <w>kidx</w>
+      <w>mctx</w>
       <w>msys</w>
       <w>phas</w>
       <w>picovoice</w>
@@ -20,6 +22,8 @@
       <w>stdint</w>
       <w>texttospeech</w>
       <w>texttospeechpb</w>
+      <w>wakeword</w>
+      <w>wakewords</w>
       <w>wavenet</w>
     </words>
   </dictionary>
